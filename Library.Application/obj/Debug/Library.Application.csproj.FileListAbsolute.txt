@@ -1,0 +1,9 @@
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Application\bin\Debug\Library.Application.dll
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Application\bin\Debug\Library.Application.pdb
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Application\obj\Debug\Library.Application.dll
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Application\obj\Debug\Library.Application.pdb
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Application\bin\Debug\Library.Application.dll
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Application\bin\Debug\Library.Application.pdb
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Application\obj\Debug\Library.Application.csprojResolveAssemblyReference.cache
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Application\obj\Debug\Library.Application.dll
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Application\obj\Debug\Library.Application.pdb

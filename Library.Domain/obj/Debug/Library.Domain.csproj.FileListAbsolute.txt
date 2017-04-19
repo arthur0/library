@@ -1,0 +1,9 @@
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Domain\bin\Debug\Library.Domain.dll
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Domain\bin\Debug\Library.Domain.pdb
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Domain\obj\Debug\Library.Domain.dll
+C:\Users\aluno.CESED\Documents\Arthur\library\Library.Domain\obj\Debug\Library.Domain.pdb
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Domain\bin\Debug\Library.Domain.dll
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Domain\bin\Debug\Library.Domain.pdb
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Domain\obj\Debug\Library.Domain.csprojResolveAssemblyReference.cache
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Domain\obj\Debug\Library.Domain.dll
+C:\Users\aluno.CESED\Documents\Arthur\DDD\library\Library.Domain\obj\Debug\Library.Domain.pdb
