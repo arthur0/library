@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAppServicesBase.cs" />
+    <Compile Include="Interfaces\IBookAppService.cs" />
+    <Compile Include="Interfaces\ICustomerAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AppServiceBase.cs" />
+    <Compile Include="Services\BookAppService.cs" />
+    <Compile Include="Services\CustomerAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Domain\Library.Domain.csproj">
+      <Project>{0dd8c375-53a9-4edc-ba50-ad2487b4e74b}</Project>
+      <Name>Library.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

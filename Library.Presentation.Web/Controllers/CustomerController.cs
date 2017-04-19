@@ -1,4 +1,8 @@
-﻿using Library.Infra.Data.Repositories;
+﻿using AutoMapper;
+using Library.Application.Interfaces;
+using Library.Domain.Entities;
+using Library.Presentation.Web.ViewModels;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace Library.Presentation.Web.Controllers
@@ -6,18 +10,26 @@ namespace Library.Presentation.Web.Controllers
 
     public class CustomerController : Controller
     {
-        private readonly CustomerRepository _customerRepository = new CustomerRepository();
+        private readonly ICustomerAppService _customerApp;
+
+        public CustomerController(ICustomerAppService customerApp)
+        {
+            _customerApp = customerApp;
+        }
         
         // GET: Customer
         public ActionResult Index()
         {
-            return View();
+            var customerViewModel = Mapper.Map<IEnumerable<Customer>, IEnumerable<CustomerViewModel>>(_customerApp.GetAll());
+            return View(customerViewModel);
         }
 
         // GET: Customer/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var customer = _customerApp.GetByID(id);
+            var customerViewModel = Mapper.Map<Customer, CustomerViewModel>(customer);
+            return View(customerViewModel);
         }
 
         // GET: Customer/Create
@@ -28,24 +40,30 @@ namespace Library.Presentation.Web.Controllers
 
         // POST: Customer/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(CustomerViewModel customer)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
-
+                var customerDomain = Mapper.Map<CustomerViewModel, Customer>(customer);
+                _customerApp.Add(customerDomain);
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(customer);
         }
 
-        // GET: Customer/Edit/5
-        public ActionResult Edit(int id)
+        // POST: Customer/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(CustomerViewModel customer)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                var customerDomain = Mapper.Map<CustomerViewModel, Customer>(customer);
+                _customerApp.Update(customerDomain);
+                return RedirectToAction("Index");
+            }
+            return View(customer);
         }
 
         // POST: Customer/Edit/5

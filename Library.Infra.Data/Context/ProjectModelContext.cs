@@ -10,15 +10,19 @@ namespace Library.Infra.Data.Context
     public class ProjectModelContext : DbContext
     {
 
+
         public ProjectModelContext()
             : base("ProjectModelContext")
         {
 
         }
 
+
         public DbSet<Customer> Customers { get; set; }
 
+
         public DbSet<Book> Books { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -43,6 +47,7 @@ namespace Library.Infra.Data.Context
             modelBuilder.Configurations.Add(new CustomerConfiguration());
             modelBuilder.Configurations.Add(new BookConfiguration());
         }
+
 
         public override int SaveChanges()
         {

@@ -2,7 +2,7 @@
 
 namespace Library.Domain.Interfaces.Services
 {
-    public interface ICustomerService : IBaseService<Customer>
+    public interface ICustomerService : IServiceBase<Customer>
     {
         /*
          *  IEnumerable<Customer> GetSpecialCustomers();

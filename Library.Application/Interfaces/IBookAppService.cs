@@ -1,9 +1,9 @@
 ﻿using Library.Domain.Entities;
 using System.Collections.Generic;
 
-namespace Library.Domain.Interfaces.Services
+namespace Library.Application.Interfaces
 {
-    public interface IBookService : IServiceBase<Book>
+    public interface IBookAppService : IAppServicesBase<Book>
     {
         IEnumerable<Book> GetByTitle(string title);
     }

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Library.Domain.Interfaces.Services
+namespace Library.Application.Interfaces
 {
-    public interface IBaseService<TEntity> where TEntity : class
+    public interface IAppServicesBase<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
 

@@ -5,7 +5,7 @@ using Library.Domain.Interfaces.Services;
 
 namespace Library.Domain.Services
 {
-    public class BookService : BaseService<Book>, IBookService
+    public class BookService : ServiceBase<Book>, IBookService
     {
         private readonly IBookRepository _repository;
 
@@ -14,7 +14,7 @@ namespace Library.Domain.Services
             _repository = repository;
         }
 
-        public IEnumerable<Book> findByTitle(string title)
+        public IEnumerable<Book> GetByTitle(string title)
         {
             return _repository.findByTitle(title);
         }

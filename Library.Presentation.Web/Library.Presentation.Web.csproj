@@ -225,13 +225,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Library.Application\Library.Application.csproj">
+      <Project>{f3d28935-ba59-4769-baa0-ed50ecf41da9}</Project>
+      <Name>Library.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Library.Domain\Library.Domain.csproj">
       <Project>{0dd8c375-53a9-4edc-ba50-ad2487b4e74b}</Project>
       <Name>Library.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Library.Infra.Data\Library.Infra.Data.csproj">
-      <Project>{2A05F2EE-5825-4EBA-A8FC-4D5A69560D72}</Project>
-      <Name>Library.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

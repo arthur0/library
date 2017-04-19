@@ -4,7 +4,7 @@ using Library.Domain.Interfaces.Services;
 
 namespace Library.Domain.Services
 {
-    public class CustomerService : BaseService<Customer>, ICustomerService
+    public class CustomerService : ServiceBase<Customer>, ICustomerService
     {
         private readonly ICustomerRepository _repository;
 
